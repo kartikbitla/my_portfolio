@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 70px;
+    width: 100%;
+    padding: 20px;
+}
+
+.other-head {
+    color: red;
+}
+
+.change-text-hello::before {
+    content: attr(data-hover-text-hello);
+    display: none;
+    color: red;
+}
+
+
+.change-text-hello:hover::before {
+    display: inline;
+}
+
+
+.change-text-hello:hover {
+    text-indent: 15px;
+    text-align: center;
+    color: transparent;
+}
+
+
+
+.change-text-other::before {
+    content: attr(data-hover-text-other);
+    display: none;
+    color: red;
+}
+
+
+.change-text-other:hover::before {
+    display: inline;
+}
+
+
+.change-text-other:hover {
+    text-indent: 15px;
+    text-align: center;
+    color: transparent;
+}
+
+button {
+    background-color: #0078d4;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    margin: 50px;
+    border-radius: 5px;
+    text-align: center;
+    padding-left: 20px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+li {
+    line-height: 2.0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.circular-image {
+    border-radius: 50%;
+    height: 30%;
+    width: 20%;
+    padding: 25px;
+    margin-top: 25px;
+}
