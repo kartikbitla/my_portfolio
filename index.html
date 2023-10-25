@@ -1,63 +1,100 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
-<body class="background">
-    <div class="card">
-        <img src="/img/logo.jpeg" class="img">
-        <h1 id="head">Help us Improve</h1>
-        <button id="another_feedback">Another Feedback</button>
 
-        <div class="forms" id="forms">
-            <form class="forms">
-                <label for="fname">1. First Name:</label>
-                <input type="text" id="fname" name="fname"placeholder=" First Name" style="margin-left:50px;">
-                <a id="e-fname" style="display:none" class="e-required">Required*</a>
-                <br>
+<body>
+    <div style="text-align:center;">
+        <div id="homepage-content">
+            <h1 class="change-text-hello" data-hover-text-hello="About" id="about">Hello,</h1>
+            <h1 class="change-text-other other-head" data-hover-text-other="Work" id="work">I am</h1>
+            <h1 class="change-text-other other-head" data-hover-text-other="Contact" id="contact">Kartik Bitla</h1>
+        </div>
 
-                <label for="lname">2. Last Name:</label>
-                <input type="text" id="lname" name="lname" placeholder=" Last Name" style="margin-left:50px;">
-                <a id="e-lname" style="display:none" class="e-required">Required*</a>
-                <br>
+        <div id="hompage-img">
+            <img class="circular-image" src="https://envri.eu/wp-content/uploads/2016/08/software-developer-copy.jpg">
+        </div>
+    </div>
 
-                <label for="email">3. Email:</label>
-                <input type="text" id="email" name="email" placeholder="  xyz@example.com" style="margin-left:90px;">
-                <a id="e-email" style="display:none" class="e-required">Required*</a>
-                <br>
+    <div id="about-content" style="display:none;">
+        <button id="about-back">Back</button>
+        <h1 style="text-align:center">About Me</h1>
+        <p>
+            Hello, I'm Kartik Bitla, an enthusiastic self-taught software developer with a unique journey.
+            Despite graduating in 2017 with a degree in Commerce, I've been drawn to the captivating world of software development,
+            where my passion truly lies. My self-driven pursuit of software development has equipped me with a strong foundation in
+            programming languages such as Java, Python, and JavaScript. I thrive on learning and adapting to the ever-evolving tech landscape and
+            eagerly embrace new challenges. My career goal is to create software solutions that not only meet users' needs but also have a
+            positive impact on the world. I'm known for my teamwork, quick learning, and unwavering commitment to delivering high-quality
+            code. I'm excited to collaborate with fellow developers, designers, and innovators to bring cutting-edge ideas to life.
+            Whether it's web development, mobile apps, or any other software project, I'm ready to take the first steps in my exciting
+            journey as a self-taught software developer.
+        </p>
 
-                <label for="contact">4. Contact:</label>
-                <input type="tel" id="contact" name="contact" placeholder="  No Spamming" style="margin-left:75px;">
-                <a id="e-contact" style="display:none" class="e-required">Required*</a>
-                <br>
+        <p style="color:#3366CC"><a href="https://drive.google.com/file/d/1yYTQKkgQ7U13zLgDdfliUq6_Cu3ID2NX/view?usp=share_link" target="_blank">
+                <strong>My Resume</strong></a></p>
+    </div>
 
-                <label for="student_id">5. Student ID:</label>
-                <input type="text" id="student_id" name="student_id" placeholder="  Student ID" style="margin-left:50px; margin-bottom: 30px;">
-                <a id="e-studentId" style="display:none" class="e-required">Required*</a>
-                <br>
+    <div id="work-content" style="display:none;">
+        <button id="work-back">Back</button>
+        <div style="text-align:center">
+            <h2 style="color:#33A02C">WORK EXPERIENCES</h2>
+            <div style="text-align:center">
+                <h2 style="color:#FF5733">Team Leader at FullSpectrum Solutions / Business Promoted</h2>
+                <ul style="list-style-type: none;">
+                    <li>* Acts as a ﬁrst contact for client, Plans and executes all daily events accordingly.</li>
+                    <li>* Manage, control and coordinate task schedule & implementation to make sure the task to be completed on time.</li>
+                    <li>* Conduct monthly review call to understand new process updates, modify SOP.</li>
+                    <li>* Trains new hires on expectations and daily activities.</li>
+                    <li>* Miscellaneous works (Invoicing, Quality check, Paycheck to Drivers, Condition report, Mail etc).</li>
+                    <li>* Follow up on project’s progress, resolve any problems that arise.</li>
+                </ul>
+            </div>
 
-                <label for="intersting" >6. Was content useful and interesting </label><br>
-                <a>Worst</a><input type="range" style="margin-bottom: 30px;">Best</form>
-                
+            <br>
+            <br>
+            <br>
+            <br>
 
-                <label for="organised">7. The programe was structured and well organised</label><br>
-                <a>Worst</a><input type="range" style="margin-bottom: 30px;">Best</form><br>
+            <div style="text-align:center">
+                <h2 style="color:#FF5733">Key Account Executive at Gati KWE</h2>
+                <ul style="list-style-type: none;">
+                    <li>* Plan warehouses and distribution centres for eﬃciency in both operations and capacity.</li>
+                    <li>* Organise transportation activities, including storage of goods, managing information accrued from point of origin to
+                        delivery, orchestrating transportation movements, and arranging for services as necessary.</li>
+                    <li>* Coordinate and track movement of goods through tracking system.</li>
+                    <li>* Execute logistics plan to move products and packages to reach destinations on schedule.</li>
+                    <li>* Review freight rates and other transportation costs to keep working costs low.</li>
+                </ul>
+            </div>
+        </div>
 
-                <label for="feedback">8. Comments:</label><br>
-                <textarea id="feedback" name="feedback" rows="7" cols="50"></textarea>
-                <br>
 
-                <button id="submit">Submit</button><br>
-                <a class="error-msg" id="errorMsg" style="display:none">Please fill the Required field*</a>       
-                
+    </div>
 
-            </form>    
-    </div>   
-    </div>  
 
-    
-    <script src="script.js"></script>
+    <div id="contact-content" style="display:none;">
+        <button id="contact-back">Back</button>
+        <h1 style="text-align:center">Contact Me</h1>
+        <p>
+            <a><i class="fas fa-phone"></i> +91 9766350044</a>
+        </p>
+
+        <p>
+            <a><i class="fas fa-envelope"></i> bitlakartik@gmail.com</a>
+        </p>
+
+        <p>
+            <a href="https://github.com/kartikbitla" target="_blank"><i class="fab fa-github"></i> GitHub Profile</a>
+        </p>
+
+        <p>
+            <a href="https://www.linkedin.com/in/kartikbitla" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+        </p>
+    </div>
 </body>
+
 </html>
